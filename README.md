@@ -5,7 +5,7 @@
 
 # Входные данные
 
-В качестве входных данных 3 csv-файла:
+В качестве входных данных csv-файлы:
 
 * olist_customers_datase.csv (https://disk.yandex.ru/d/QXrVDUoQvFhIcg) — таблица с уникальными идентификаторами пользователей (customer_id — позаказный идентификатор пользователя, customer_unique_id —  уникальный идентификатор пользователя  (аналог номера паспорта), customer_zip_code_prefix —  почтовый индекс пользователя, customer_city —  город доставки пользователя, customer_state —  штат доставки пользователя).
 * olist_orders_dataset.csv (https://disk.yandex.ru/d/0zWmh1bYP6REbw) —  таблица заказов (order_id —  уникальный идентификатор заказа (номер чека), customer_id —  позаказный идентификатор пользователя, order_status —  статус заказа, order_purchase_timestamp —  время создания заказа, order_approved_at —  время подтверждения оплаты заказа, order_delivered_carrier_date —  время передачи заказа в логистическую службу, order_delivered_customer_date —  время доставки заказа, order_estimated_delivery_date —  обещанная дата доставки). Уникальные статусы заказов: created —  создан, approved —  подтверждён, invoiced —  выставлен счёт, processing —  в процессе сборки заказа, shipped —  отгружен со склада, delivered —  доставлен пользователю, unavailable —  недоступен, canceled —  отменён.
